@@ -26,6 +26,11 @@
       height: 325px;     
     }
 
+    @media screen and (max-width: 801px) {
+      /* Mobile */
+      height: 350px;     
+    }
+
     justify-content: center;
     
     .flash-dots-container{
@@ -63,21 +68,8 @@
       z-index:2;
           //top: -450px;
       top:1px;
-
- 
-
       
-
-      // background: url("../assets/img/slab-animate/background_circuit_2x.png");
-      // background-repeat: no-repeat;
-      // background-position: center top;
-      // background-size: contain;
-      // @media screen and (max-width: 640px) {
-      //   /* Mobile */
-      //   background: url("../assets/img/slab-animate/background_circuit_2x_mobile.png");       
-      // }
-
-      .animated-items {
+     .animated-items {
         position: relative;
         top: -40px;
         @media screen and (max-width: 979px) {
