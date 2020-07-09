@@ -77,7 +77,15 @@
               
               @media screen and (min-width: 979px) {
                 content:""; 
-              }          
+              }   
+
+              @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+               // -webkit-transform: rotate(-450deg);
+               // transform: rotate(-450deg); 
+              }
+                
+              
+              height: 350px; 
           }
         }
       }
