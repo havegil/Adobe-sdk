@@ -1067,6 +1067,8 @@ section.grey-bar {
   background-color: #f7f7f7;
   margin: 4.375rem 0;
   padding: 1.125rem 2.75rem 1.5625rem;
+  border-radius: 10px;
+
   @media screen and (min-width: 1440px) {
     max-width: 52.5rem;
     margin: 4.375rem auto;
