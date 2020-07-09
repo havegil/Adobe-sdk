@@ -87,12 +87,14 @@
           width: 58%;
           z-index: 1;
           left: 14.5%;
-          visibility: hidden;
+         // visibility: hidden;
+         opacity:0;
           margin-top: -12px;
           @media screen and (min-width: 980px) {
             /* Desktop */
             display: block;
-            visibility: visible;
+            //visibility: visible;
+            opacity:0;
           }
           @media screen and (max-width: 979px) {
             /* Tablet */
@@ -113,7 +115,8 @@
           z-index: 2;
           top: 53%;
           left: 19.5%;
-          visibility: hidden;
+          //visibility: hidden;
+          opacity:0;
           @media screen and (min-width: 980px) {
             /* Desktop */
           }
@@ -136,7 +139,8 @@
           z-index: 3;
           top: 13%;
           left: 45.5%;
-          visibility: hidden;
+        // visibility: hidden;
+        opacity:0;
           @media screen and (max-width: 979px) {
             /* Tablet */
             /* position:relative!important; */
@@ -162,7 +166,8 @@
           z-index: 4;
           top: 57%;
           left: 47.3%;
-          visibility: hidden;
+      // visibility: hidden;
+      opacity:0;
           @media screen and (max-width: 979px) {
             /* Tablet */
             width: 21% !important;
@@ -183,7 +188,8 @@
           z-index: 5;
           top: 12.5%;
           left: 64.5%;
-          visibility: hidden;
+      //visibility: hidden;
+      opacity:0;
           @media screen and (max-width: 979px) {
             /* Tablet */
             width: 21% !important;
@@ -205,7 +211,8 @@
           z-index: 6;
           top: 35%;
           left: 63.9%;
-          visibility: hidden;
+      //visibility: hidden;
+      opacity:0;
           @media screen and (max-width: 979px) {
             /* Tablet */
             width: 23% !important;
@@ -223,6 +230,25 @@
     }
   }
 
-  .slab-wrapper{
-    visibility:hidden;
+
+  @keyframes slideUpFade
+{ from {top:40px; opacity: 0;}
+to {top:0px; opacity: 1}
+}
+
+	
+@-webkit-keyframes slideUpFade
+{ from {top:40px; opacity: 0;}
+to {top:0px; opacity: 1}
+}
+
+  .slab-header-copy-wrapper{
+    width:100%;
+    position:relative;
+    text-align: center;
+    z-index:25;
+    margin-bottom: 65px;
+     
+      //opacity:0;
+    
   }

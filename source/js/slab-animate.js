@@ -1,5 +1,5 @@
 
-    let animCount = 0;
+    /*let animCount = 0;
     let animStyle = ["fadeIn", "slideRight", "fadeIn", "slideRight","fadeIn", "slideRight", "fadeItIn", "slideUp"];
     let mcAnim = ['laptop', 'lp-pointer', 'ipad', 'ipad-pointer', 'phone', 'phone-pointer', 'flashes', 'slab-text'];
 
@@ -85,6 +85,56 @@
     window.onresize = debounce;
 
     checkBrowserWindow();
+    */
+
+    
+
+   function MoveText(){
+    let textBlock = document.getElementById("slab-text");  
+    textBlock.classList.add("slideUpFade");  
+
+    //bring in devices
+    fadeDevices();    
+  }
+
+  function fadeDevices(){
+    let laptopDevice = document.getElementById("laptop");    
+    let ipadDevice = document.getElementById("ipad");
+    let phoneDevice = document.getElementById("phone");
+
+    laptopDevice.classList.add("fadeItIn");      
+   
+    ipadDevice.classList.add("fadeItIn",  "delayPt5"); 
+    phoneDevice.classList.add("fadeItIn", "delay1");
+
+    //bring in the pointers
+    fadeInPointers();    
+  }
+
+  //fadeIn POinters
+  function fadeInPointers(){
+    let laptopPointer = document.getElementById("lp-pointer");
+    let ipadPointer = document.getElementById("ipad-pointer");
+    let iphonePointer = document.getElementById("phone-pointer");
+
+    laptopPointer.classList.add("fadeItIn", "delay1pt5");
+    iphonePointer.classList.add("fadeItIn", "delay1pt5");
+    ipadPointer.classList.add("fadeItIn", "delay1pt5"); 
+
+    //bring in background image
+    fadeBackImg();
+  }
+
+
+  //fadeIn background image
+  function fadeBackImg(){
+    let textBlock = document.getElementById("flashes");  
+    textBlock.classList.add("fadeItIn", "delay1pt5"); 
+  }
+
+
+  //init
+  MoveText();
 
   
   

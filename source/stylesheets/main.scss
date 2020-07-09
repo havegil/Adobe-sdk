@@ -18,6 +18,7 @@ $header-font-size: 27px;
 body {
   font-family: 'Adobe Clean';
 }
+
 .main {
   font-family: 'Adobe Clean';
   a {
@@ -507,7 +508,7 @@ body {
         margin: 0 auto;
       }
       @media screen and (min-width: 1440px) {
-        max-width: 28rem;
+        max-width: 30rem;
         padding-top: 7.75rem;
       }
     }
