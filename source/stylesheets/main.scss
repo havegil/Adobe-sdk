@@ -91,6 +91,9 @@ body {
   }
   .slick-track {
     padding: 1rem 0 !important;
+    @media screen and (min-width: 1440px) {
+      padding: 1rem !important;
+    }
   }
 }
 
@@ -138,6 +141,9 @@ body {
   bottom: -1rem !important;
   @media screen and (min-width: 768px) {
     bottom: -2.25rem !important;
+  }
+  li {
+    margin: 0 -2px !important;
   }
 }
 /* home specific styles */
@@ -369,6 +375,7 @@ body {
 
     p {
       color: $grey;
+      font-family: 'Adobe Clean Light';
       margin: 0;
       padding-bottom: 0.5rem;
       text-align: left;
@@ -669,7 +676,8 @@ section.home-card {
     }
 
     p {
-      margin: 0;
+      margin: 0 0 2rem 0;
+      text-align: center;
     }
 
     .callout-item {
@@ -1062,6 +1070,7 @@ section.grey-bar {
   @media screen and (min-width: 1440px) {
     max-width: 52.5rem;
     margin: 4.375rem auto;
+    border-radius: 10px;
   }
 
   img {
@@ -1072,7 +1081,7 @@ section.grey-bar {
   }
 
   .slick-dots {
-    bottom: -55px !important;
+    bottom: -122px !important;
   }
 }
 /* grey bar end */
