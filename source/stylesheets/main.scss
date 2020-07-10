@@ -68,6 +68,7 @@ body {
     padding-bottom: 0.5625rem;
     text-transform: uppercase;
     text-align: left;
+    letter-spacing:1px;
     @media screen and (min-width: 768px) {
       text-align: center;
     }
@@ -761,11 +762,11 @@ section.dctsdk-work-flow {
     color: $grey;
     cursor: pointer;
     font-size: 1.1875rem;
-    margin-bottom: 1.875rem;
+   // margin-bottom: 1.875rem;
+    margin-bottom: 0.625rem; /* Demand by rusty */
     width:290px;
     @media screen and (min-width: 768px) {
-      // margin-bottom: 0; /* lr */
-      margin-bottom: 0.35rem;
+       margin-bottom: 0.625rem
     }
   }
 
@@ -854,16 +855,12 @@ section.dctsdk-work-flow {
   }
 
   .work-flow_menu ul li .combine {
-    width: 26px;
-    height: 25px;
-    background-size: 26px;
+    background-size: 24px 24px;
     background-image: url("../assets/svg/s_combinefiles_color_24.svg");
   }
 
   .work-flow_menu ul li .protect {
-    width: 25px;
-    height: 27px;
-    background-size: 21px;
+    background-size: 18px 23px;
     background-image: url("../assets/svg/a12_protect.svg");
   }
 
@@ -909,80 +906,48 @@ section.dctsdk-work-flow {
     background-image: url("../assets/svg/menu-icons/menu_tool_options.svg");
   }
 
-    .work-flow_menu ul li .reorder {
-    width: 26px;
-    height: 22px;
-    background-size: 18px;
+  .work-flow_menu ul li .reorder {
+    background-size: 24px 19px;
     background-image: url("../assets/svg/menu-icons/reorder_page.svg");
   }
 
   .work-flow_menu ul li .insert {
-    width: 23px;
-    height: 27px;
-    background-size: 22px;
+    background-size: 17px 21px;
     background-image: url("../assets/svg/menu-icons/insert_page.svg");
   }
 
   .work-flow_menu ul li .linearize {
-    width: 26px;
-    height: 22px;
-    background-size: 18px;
+    background-size: 17px 24px;
     background-image: url("../assets/svg/menu-icons/linearize_pdf.svg");
   }
 
   .work-flow_menu ul li .rotate {
-    width: 26px;
-    height: 24px;
-    background-size: 24px;
+    background-size: 24px 23px;
     background-image: url("../assets/svg/menu-icons/rotate_page.svg");
   }
 
-    .work-flow_menu ul li .reorder {
-    width: 26px;
-    height: 22px;
-    background-size: 25px;
-    background-image: url("../assets/svg/menu-icons/reorder_page.svg");
-  }
-
   .work-flow_menu ul li .delete {
-    width: 26px;
-    height: 23px;
-    background-size: 23px;
+    background-size: 23px 23px;
     background-image: url("../assets/svg/menu-icons/delete_page.svg");
   }
 
-  .work-flow_menu ul li .linearize {
-    width: 23px;
-    height: 27px;
-    background-size: 23px;
-    background-image: url("../assets/svg/menu-icons/linearize_pdf.svg");
-  }
-
   .work-flow_menu ul li .replace {
-    width: 26px;
-    height: 24px;
-    background-size: 25px;
+    background-size: 22px 22px;
     background-image: url("../assets/svg/menu-icons/replace_page.svg");
   }
 
   .work-flow_menu ul li .compress {
-    width: 26px;
-    height: 22px;
-    background-size: 18px;
+    background-size: 23px 20px;
     background-image: url("../assets/svg/menu-icons/compress_pdf.svg");
   }
 
   .work-flow_menu ul li .recognize {
-    width: 17px;
-    height: 21px;
     background-size: 17px 21px;
     background-image: url("../assets/svg/menu-icons/recognize_text.svg");
   }
 
   .work-flow_menu ul li .export {
-    width: 26px;
-    height: 27px;
-    background-size: 25px;
+    background-size: 22px 22px;
     background-image: url("../assets/svg/menu-icons/export_page.svg");
   }
 
