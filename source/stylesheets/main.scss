@@ -439,7 +439,7 @@ body {
         padding-top: 3.5px;
         font-size: 14px;
         font-weight: 700;
-        color: #4b4b4b;
+        color: $grey;
 
       }
 
@@ -1034,28 +1034,33 @@ section.dctsdk-work-flow {
   .work-flow-support-mode-mobile.open {
     display: block;
 
-    .button-link{
-      border:0;
-      background:transparent;
-      color:#0D66D0 !important;
-      font-weight:normal!important;
-      margin-left:0px !important;
-      padding-left:0 !important;
+
+    .button-link {
+      border: 0;
+      background: transparent;
+      color: $blue !important;
+      display: block;
+      font-size: 1.0625rem;
+      font-weight: normal !important;
+      margin-left: 0 !important;
+      margin-top: -2rem;
+      padding-left: 0 !important;
       &:hover{
-        color:#0D66D0!important;
+        color: $blue !important;
       }
     }
   }
 
-  .work-flow_menu ul li.active{
+  .work-flow_menu ul li.active {
+
 
     .shadow-box.dctsdk{
       @media screen and (min-width: 768px) {
-      background: #FFFFFF;
+      background: $white;
       box-shadow: 0 3px 16px #46303029;
       border-radius: 6px;
       margin-bottom: 0;
-      color: #2C2C2C;
+      color: $dk-grey;
       font-weight: bold;
       cursor: pointer;
       }
@@ -1067,6 +1072,20 @@ section.dctsdk-work-flow {
       }
     }
 
+  }
+}
+
+.work-flow-menu-item {
+  .chev-arrow-right {
+    transform: initial;
+    transition-duration: 150ms;
+  }
+}
+
+.work-flow-menu-item.open {
+  .chev-arrow-right {
+    transform: rotate(90deg);
+    transition-duration: 150ms;
   }
 }
 /* Work flow end */
