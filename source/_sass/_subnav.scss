@@ -99,6 +99,10 @@
       &.allowHover:hover{
         background: #E7E7E7;
       }
+
+      &.active{
+        background: #E7E7E7;
+      }
    
 
       .sub-nav-product-item-wrapper {
@@ -171,8 +175,7 @@
         @media screen and (min-width: 790px){
           display: none;
         }
-      }
-      
+      }      
 
       .sub-nav-menu-item {
         margin: auto 0;
@@ -200,6 +203,10 @@
 
         &.no-hover:hover{          
           background-color: transparent;         
+        }
+        
+        &.active{
+          background: #E7E7E7;
         }
 
         .sub-nav-menu-label {
@@ -249,9 +256,6 @@
             }
           }
 
-          &.active{
-            background: #E7E7E7;
-          }
         }
 
         @media screen and (min-width: 900px){

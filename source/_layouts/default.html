@@ -12,7 +12,6 @@
       <link rel="stylesheet" href="https://unpkg.com/@adobe/spectrum-css@2.x/dist/components/typography/index-vars.css">
       <link rel="stylesheet" href="https://unpkg.com/@adobe/spectrum-css-grid@0.x/dist/spectrum-css-grid.css">
       <link rel="stylesheet" href="stylesheets/style.css">
-      <!-- <link rel="stylesheet" href="stylesheets/subnav.css"> -->
       <link rel="stylesheet" href="stylesheets/topnav.css">
 
 
@@ -23,7 +22,7 @@
 
     </head>
   </head>
-  <body class="spectrum spectrum--light">
+  <body class="spectrum spectrum--light {% if page.style %}{{ page.style }} {% endif %}" >
     {% include topnav.html %}
     {% include subnav.html %}
     <div class="spectrum--large spectrum spectrum--light" id="content">
