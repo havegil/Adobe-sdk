@@ -855,12 +855,16 @@ section.dctsdk-work-flow {
   }
 
   .work-flow_menu ul li .combine {
-    background-size: 24px 24px;
+    width: 26px;
+    height: 25px;
+    background-size: 26px;
     background-image: url("../assets/svg/s_combinefiles_color_24.svg");
   }
 
   .work-flow_menu ul li .protect {
-    background-size: 18px 23px;
+    width: 25px;
+    height: 27px;
+    background-size: 21px;
     background-image: url("../assets/svg/a12_protect.svg");
   }
 
@@ -906,48 +910,79 @@ section.dctsdk-work-flow {
     background-image: url("../assets/svg/menu-icons/menu_tool_options.svg");
   }
 
-  .work-flow_menu ul li .reorder {
-    background-size: 24px 19px;
+    .work-flow_menu ul li .reorder {
+    width: 26px;
+    height: 22px;
+    background-size: 18px;
     background-image: url("../assets/svg/menu-icons/reorder_page.svg");
   }
 
   .work-flow_menu ul li .insert {
-    background-size: 17px 21px;
+    width: 23px;
+    height: 27px;
+    background-size: 22px;
     background-image: url("../assets/svg/menu-icons/insert_page.svg");
   }
 
   .work-flow_menu ul li .linearize {
+
     background-size: 17px 24px;
     background-image: url("../assets/svg/menu-icons/linearize_pdf.svg");
   }
 
   .work-flow_menu ul li .rotate {
-    background-size: 24px 23px;
+    width: 26px;
+    height: 24px;
+    background-size: 24px;
     background-image: url("../assets/svg/menu-icons/rotate_page.svg");
   }
 
+    .work-flow_menu ul li .reorder {
+    width: 26px;
+    height: 22px;
+    background-size: 25px;
+    background-image: url("../assets/svg/menu-icons/reorder_page.svg");
+  }
+
   .work-flow_menu ul li .delete {
-    background-size: 23px 23px;
+    width: 26px;
+    height: 23px;
+    background-size: 23px;
     background-image: url("../assets/svg/menu-icons/delete_page.svg");
   }
 
+  .work-flow_menu ul li .linearize {
+    width: 23px;
+    height: 27px;
+    background-size: 23px;
+    background-image: url("../assets/svg/menu-icons/linearize_pdf.svg");
+  }
+
   .work-flow_menu ul li .replace {
-    background-size: 22px 22px;
+    width: 26px;
+    height: 24px;
+    background-size: 25px;
     background-image: url("../assets/svg/menu-icons/replace_page.svg");
   }
 
   .work-flow_menu ul li .compress {
-    background-size: 23px 20px;
+    width: 26px;
+    height: 22px;
+    background-size: 18px;
     background-image: url("../assets/svg/menu-icons/compress_pdf.svg");
   }
 
   .work-flow_menu ul li .recognize {
+    width: 17px;
+    height: 21px;
     background-size: 17px 21px;
     background-image: url("../assets/svg/menu-icons/recognize_text.svg");
   }
 
   .work-flow_menu ul li .export {
-    background-size: 22px 22px;
+    width: 26px;
+    height: 27px;
+    background-size: 25px;
     background-image: url("../assets/svg/menu-icons/export_page.svg");
   }
 
