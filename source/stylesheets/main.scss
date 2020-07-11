@@ -144,7 +144,7 @@ body {
 .slick-dots {
   bottom: -1rem !important;
   @media screen and (min-width: 768px) {
-    bottom: -2.25rem !important;
+    bottom: -1.25rem !important;
   }
   li {
     margin: 0 -2px !important;
@@ -621,6 +621,7 @@ section.header {
 
   .button-link {
     color: $grey !important;
+    font-size: 1.0625rem;
     //display: inline-block;
     @media screen and (min-width: 1440px) {
       font-size: 0.875rem;
@@ -1156,47 +1157,19 @@ section.grey-bar {
 /* grey bar end */
 /* customer logos */
 section.customer {
-  margin: 4.375rem 2.75rem 0;
+  margin: 4.375rem 0;
 
-  .customer-container{
-    max-width: 1260px;
+  .customer-container {
+    max-width: 78.75rem;
     margin: 0 auto;
   }
-
-  img {
-    display: none;
-    margin: 0 auto;
-    vertical-align: top;
+  .slick-track {
+    padding: 0 !important;
   }
-
-  img:first-of-type {
-    display: block;
-  }
-  @media screen and (min-width: 768px) and (max-width: 1439px) {
-    margin: 4.375rem 2.75rem 5.125rem;
-
-    img,
-    img:first-of-type {
-      display: inline-block;
-      max-width: 32%;
+  .card {
+    img {
+      width: 100%;
     }
-
-    img:last-of-type {
-      display: none;
-    }
-  }
-  @media screen and (min-width: 1440px) {
-    margin: 4.375rem 2.75rem 5.125rem;
-
-    img,
-    img:first-of-type {
-      display: inline-block;
-      max-width: 25%;
-    }
-  }
-
-  img.broadsign {
-    padding: 3vw 4rem;
   }
 }
 /* customer logos end */
