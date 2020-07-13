@@ -1,5 +1,5 @@
 ---
----
+--- 
 
 $black: #000;
 $blue: #0D66D0;
@@ -10,7 +10,6 @@ $md-grey: #323232;
 $lt-grey: #e1e1e1;
 $base-font-size: 16px;
 $header-font-size: 27px;
-
 @import "subnav";
 @import "font-style";
 @import "slab-animate";
@@ -38,7 +37,6 @@ body {
     @media screen and (min-width: 768px) {
       text-align: center;
     }
-
     @media screen and (min-width: 1440px) {
       font-size: 2.8125rem;
       line-height: 3.625rem;
@@ -67,7 +65,6 @@ body {
       font-size: 1.75rem;
       line-height: 2.25rem;
     }
-
   }
 
   h4 {
@@ -100,6 +97,7 @@ body {
   .slick-arrow {
     display: none !important;
   }
+
   .slick-track {
     padding: 1rem 0 !important;
     @media screen and (min-width: 1440px) {
@@ -123,20 +121,16 @@ body {
   border-width: 2px;
   border-style: solid;
   border-radius: 16px;
-
   max-height: 32px;
   height: auto;
   min-width: 72px;
-  padding: 4px 14px;
-  padding-bottom: 4.5px;
-  padding-top: 3.5px;
+  padding: 3.5px 14px 4.5px;
   font-size: 14px;
   font-weight: 700;
   font-family: 'Adobe Clean';
   color: $grey !important;
 
-  &:hover{
-
+  &:hover {
     color: $white !important;
     background: $grey;
   }
@@ -155,6 +149,7 @@ body {
   @media screen and (min-width: 768px) {
     bottom: -1.25rem !important;
   }
+
   li {
     margin: 0 -2px !important;
   }
@@ -176,15 +171,15 @@ body {
     h2 {
       font-size: 1.1875rem;
       line-height: 1.5625rem;
-        @media screen and (min-width: 768px) {
-          font-size: 1.0625rem;
-          line-height: 1.375rem;
-        }
-        @media screen and (min-width: 1440px) {
-          font-size: 1.125rem;
-          line-height: 1.4375rem;
-        }
-   }
+      @media screen and (min-width: 768px) {
+        font-size: 1.0625rem;
+        line-height: 1.375rem;
+      }
+      @media screen and (min-width: 1440px) {
+        font-size: 1.125rem;
+        line-height: 1.4375rem;
+      }
+    }
   }
 }
 /* home specific styles end */
@@ -228,12 +223,14 @@ body {
     }
 
     .card-icon {
-      &.push-down{
-        margin-bottom:50px;
+      &.push-down {
+        margin-bottom: 50px;
+
         img {
-          transform:scale(1.25);
+          transform: scale(1.25);
         }
       }
+
       img {
         margin: 0 auto 1.5rem;
       }
@@ -305,10 +302,9 @@ body {
         padding: 4px 10px;
         margin-bottom: 0.75rem;
 
-        &:hover{
-
-          color:#ffffff!important;
-          background:#6e6e6e;
+        &:hover {
+          color: #ffffff!important;
+          background: #6e6e6e;
         }
       }
     }
@@ -400,10 +396,9 @@ body {
         padding-bottom: 2rem;
 
         &:last-of-type {
-          padding-top:0;
+          padding-top: 0;
           margin-top: -30px;
         }
-
       }
 
       &.gs-callout-item {
@@ -411,11 +406,13 @@ body {
           display: inline-block;
           margin: 0 0.35rem;
           min-width: 0;
+
           &:first-of-type {
             margin: 0 0.35rem 0 0;
           }
           @media screen and (min-width: 1440px) {
             margin: 0.1rem;
+
             &:first-of-type {
               margin: 0 0.1rem 0 0;
               min-width: 76px;
@@ -423,7 +420,6 @@ body {
           }
         }
       }
-
     }
 
     .button-link {
@@ -444,19 +440,15 @@ body {
         max-height: 32px;
         height: auto;
         min-width: 72px;
-        padding: 4px 14px;
-        padding-bottom: 4.5px;
-        padding-top: 3.5px;
+        padding: 3.5px 14px 4.5px;
         font-size: 14px;
         font-weight: 700;
         color: $grey;
-
       }
 
-      &:hover{
-
-        color:#ffffff!important;
-        background:#6e6e6e;
+      &:hover {
+        color: #ffffff!important;
+        background: #6e6e6e;
       }
     }
   }
@@ -591,6 +583,7 @@ body {
         margin: 0;
         padding-bottom: 1.375rem;
         text-align: center;
+
         &.callout-item {
           bottom: 1.875rem;
           padding-bottom: 0;
@@ -637,8 +630,7 @@ section.header {
       margin-left: 1rem;
     }
 
-    &:hover{
-
+    &:hover {
       color: $white !important;
       background: $grey;
     }
@@ -665,8 +657,7 @@ section.slab {
   // background-position: center top;
   color: $white;
   margin: 0 0 4.375rem;
-  padding: 1.125rem 0px 8.75rem;
-
+  padding: 1.125rem 0 8.75rem;
   @media screen and (min-width: 1440px) {
     padding: 1.125rem 2.75rem 8.75rem;
   }
@@ -685,19 +676,19 @@ section.home-card {
     background: $white 0% 0% no-repeat padding-box;
     box-shadow: 0 3px 26px #00000010;
     border-radius: 10px;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.5rem;
     min-height: 21rem;
     padding: 2.25rem 2rem 1.875rem;
     position: relative;
     /*width: 17.75rem !important;*/
-
     h2 {
       text-align: center;
     }
 
     p {
-      margin: 2rem 0 0 0;
+      margin: 2rem 0 0;
       text-align: center;
+
       &:first-of-type {
         margin: 0;
       }
@@ -713,19 +704,21 @@ section.home-card {
       @media screen and (min-width: 1440px) {
         width: 17.75rem;
       }
+
       p {
         margin: 0;
         text-align: center;
+
         a {
           display: inline-block;
           margin: 0 0.35rem;
+
           &:first-of-type {
             margin: 0 0.35rem 0 0;
           }
         }
       }
     }
-
     @media screen and (min-width: 768px) {
       text-align: center;
       margin: 0 0.75rem;
@@ -747,7 +740,6 @@ section.home-card {
   }
 }
 /* home cards end */
-
 /* Work flow */
 section.dctsdk-work-flow {
   @media screen and (min-width: 768px) {
@@ -773,44 +765,45 @@ section.dctsdk-work-flow {
     }
   }
 
-  #home-menu{
-    margin-top:3.375rem;
+  #home-menu {
+    @media screen and (min-width: 1440px) {
+      margin-top: 3.375rem;
+    }
   }
+
   .work-flow_menu ul li {
     color: $grey;
     cursor: pointer;
     font-size: 1.1875rem;
-   // margin-bottom: 1.875rem;
-   //GN-c margin-bottom: 0.625rem;
-    margin-bottom: 3.85rem;
-    width:290px;
-    @media screen and (min-width: 768px) {
+    // margin-bottom: 1.875rem;
     //GN-c margin-bottom: 0.625rem;
-      width:224px;
+    margin-bottom: 3.85rem;
+    width: 290px;
+    @media screen and (min-width: 768px) {
+      //GN-c margin-bottom: 0.625rem;
+      width: 224px;
       margin-bottom: 2.4rem;
     }
-
-      @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1440px) {
       //GN-c margin-bottom: 0.625rem;
-        width:290px;
-        margin-bottom: 2.4rem;
-      }
+      width: 290px;
+      margin-bottom: 2.4rem;
+    }
   }
 
   .work-flow_menu ul li .work-flow-menu-copy {
     // #GN-c margin-top: -2rem;
     // #GN-c margin-left: 2.25rem;
-
-     //#GN
-     margin-top:  -2.51rem;
-     margin-left: 2.875rem;
+    //#GN
+    margin-top: -2.51rem;
+    margin-left: 2.875rem;
   }
 
   .work-flow_menu ul li .shadow-box.dctsdk {
     margin: -1.375rem 0 0;
     @media screen and (min-width: 768px) {
       //#GN-c padding: 1.25rem 2rem;
-      padding:0.8125rem 1rem;
+      padding: 0.8125rem 1rem;
     }
   }
 
@@ -820,7 +813,7 @@ section.dctsdk-work-flow {
       box-shadow: 0 3px 16px #46303029;
       border-radius: 6px;
       //#GN-c padding: 1.25rem 2rem;
-      padding:0.8125rem 1rem;
+      padding: 0.8125rem 1rem;
     }
   }
 
@@ -840,26 +833,23 @@ section.dctsdk-work-flow {
     }
   }
 
-  .menu-item-info-content{
-
+  .menu-item-info-content {
     .work-flow-menu-support {
       @media screen and (min-width: 768px) {
         display: block;
       }
-
     }
 
     .code-viewer-wrapper {
-      p{
-       display:none;
+      p {
+        display: none;
       }
     }
-
   }
 
   .mobile-no-button {
     // display: flex;
-    overflow:hidden;
+    overflow: hidden;
   }
 
   .chev-arrow-right {
@@ -885,7 +875,7 @@ section.dctsdk-work-flow {
   }
 
   .work-flow_menu ul li .create {
-     background-size: 18px 21px;
+    background-size: 18px 21px;
     background-image: url("../assets/svg/s_createpdf_color_24.svg");
     background-repeat: no-repeat;
     background-position: center center;
@@ -916,45 +906,45 @@ section.dctsdk-work-flow {
     background-size: 26px 22px;
     background-image: url("../assets/svg/menu-icons/embed.svg");
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
   }
 
   .work-flow_menu ul li .annotations {
     background-size: 22px 24px;
     background-image: url("../assets/svg/menu-icons/annotations.svg");
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
   }
 
   .work-flow_menu ul li .save {
     background-size: 17px 17px;
     background-image: url("../assets/svg/menu-icons/save_control.svg");
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
   }
 
   .work-flow_menu ul li .collaborative {
     background-size: 26px 22px;
     background-image: url("../assets/svg/menu-icons/collaborative_settings.svg");
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
   }
 
   .work-flow_menu ul li .analitics {
     background-size: 18px 21px;
     background-image: url("../assets/svg/menu-icons/analytics.svg");
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
   }
 
   .work-flow_menu ul li .tool {
     background-size: 25px 18px;
     background-image: url("../assets/svg/menu-icons/menu_tool_options.svg");
     background-repeat: no-repeat;
-    background-position:center center;
+    background-position: center center;
   }
 
-    .work-flow_menu ul li .reorder {
+  .work-flow_menu ul li .reorder {
     background-size: 24px 19px;
     background-image: url("../assets/svg/menu-icons/reorder_page.svg");
     background-repeat: no-repeat;
@@ -984,7 +974,7 @@ section.dctsdk-work-flow {
     background-position: center center;
   }
 
-    .work-flow_menu ul li .reorder {
+  .work-flow_menu ul li .reorder {
     // width: 26px;
     // height: 22px;
     background-size: 24px 19px;
@@ -1051,15 +1041,14 @@ section.dctsdk-work-flow {
     //#GN
     // margin-left: 1rem;
     // margin-top: 1rem;
-    width:40px;
-    height:40px;
+    width: 40px;
+    height: 40px;
   }
 
   .work-flow_menu ul li .icon-align.dctsdk {
     margin-left: 0;
     margin-top: 0;
   }
-
 
   .work-flow_menu ul li .work-flow-icon {
     background-color: transparent;
@@ -1069,61 +1058,52 @@ section.dctsdk-work-flow {
 
   .work-flow_code {
     display: none;
-    padding-left:0.0625rem;
-
+    padding-left: 0.0625rem;
     @media screen and (min-width: 768px) {
       display: none;
     }
-
     @media screen and (min-width: 1440px) {
       display: block;
-      padding-left:0.0625rem;
-
+      padding-left: 0.0625rem;
 
       .code-viewer-wrapper {
-
         .sdk-embed-wrapper {
-          display:none;
+          display: none;
 
-          &.code-window-opened{
-            display:block;
+          &.code-window-opened {
+            display: block;
           }
         }
-
-
-
       }
-
     }
-
     @media screen and (min-width: 1440px) {
       //padding-left: 2rem;
     }
 
-     .menu-item-info-content{
-      text-align:left;
+    .menu-item-info-content {
+      text-align: left;
 
-
-      h4{
-        text-align:left;
+      h4 {
+        text-align: left;
       }
 
-      .work-flow-menu-support{
-        text-align:left;
+      .work-flow-menu-support {
+        text-align: left;
 
-        h4{padding-bottom: 1.75rem;}
-
-        p{
-          text-align:left;
-          font-size:1rem;
-          a{text-align:left;}
+        h4 {
+          padding-bottom: 1.75rem;
         }
 
+        p {
+          text-align: left;
+          font-size: 1rem;
 
+          a {
+            text-align: left;
+          }
+        }
       }
     }
-
-
   }
 
   .work-flow-menu-support.work-flow-support-mode-mobile {
@@ -1132,13 +1112,10 @@ section.dctsdk-work-flow {
 
   .work-flow-support-mode-mobile.open {
     margin-top: 2.125rem;
-
     @media screen and (min-width: 1440px) {
       //padding-left: 2rem;
       display: block;
     }
-
-
 
     .button-link {
       border: 0;
@@ -1150,51 +1127,46 @@ section.dctsdk-work-flow {
       margin-left: 0 !important;
       margin-top: -2rem;
       padding-left: 0 !important;
-      &:hover{
+
+      &:hover {
         color: $blue !important;
       }
     }
   }
 
   .work-flow_menu ul li.active {
-
-
-    .shadow-box.dctsdk{
+    .shadow-box.dctsdk {
       @media screen and (min-width: 768px) {
-      background: $white;
-      box-shadow: 0 3px 16px #46303029;
-      border-radius: 6px;
-      margin-bottom: 0;
-      color: $dk-grey;
-      font-weight: bold;
-      cursor: pointer;
+        background: $white;
+        box-shadow: 0 3px 16px #46303029;
+        border-radius: 6px;
+        margin-bottom: 0;
+        color: $dk-grey;
+        font-weight: bold;
+        cursor: pointer;
       }
     }
-
     @media screen and (min-width: 768px) {
-      .work-flow-menu-support.work-flow-support-mode-mobile.open{
-        display:none;
+      .work-flow-menu-support.work-flow-support-mode-mobile.open {
+        display: none;
       }
     }
-
   }
 }
 
 .work-flow-menu-item {
-
-  position:relative;
+  position: relative;
 
   .chev-arrow-right {
-    position:absolute;
+    position: absolute;
     transform: initial;
     transition-duration: 150ms;
-    top:6px;
+    top: 6px;
   }
 }
 
 .work-flow-menu-item.open {
-
-  position:relative;
+  position: relative;
 
   .chev-arrow-right {
     transform: rotate(90deg);
@@ -1208,7 +1180,6 @@ section.grey-bar {
   margin: 4.375rem 0;
   padding: 1.125rem 2.75rem 1.5625rem;
   border-radius: 10px;
-
   @media screen and (min-width: 1440px) {
     max-width: 52.5rem;
     margin: 4.375rem auto;
@@ -1235,9 +1206,11 @@ section.customer {
     max-width: 78.75rem;
     margin: 0 auto;
   }
+
   .slick-track {
     padding: 0 !important;
   }
+
   .card {
     img {
       width: 100%;
@@ -1272,7 +1245,7 @@ section.dcs-help {
       img {
         display: block;
         margin: 0 auto;
-        width:45.41%;
+        width: 45.41%;
       }
     }
   }
