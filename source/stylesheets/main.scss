@@ -58,9 +58,16 @@ body {
   h3 {
     color: $dk-grey;
     font-size: $header-font-size;
+    font-size: 1.6875rem;
+    line-height: 2.1875rem;
     font-weight: 900;
     margin: 0;
     padding-bottom: 2rem;
+    @media screen and (min-width: 1440px) {
+      font-size: 1.75rem;
+      line-height: 2.25rem;
+    }
+
   }
 
   h4 {
