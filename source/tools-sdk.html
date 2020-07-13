@@ -4,6 +4,9 @@ title: DC Platform Tools SDK
 active: tools-sdk
 ---
 
+<!-- Temp test of Coral Spectrum -->
+
+
 <div class="main secondary-page">
 
   <div class="gradient">
@@ -40,7 +43,7 @@ active: tools-sdk
       <div class="work-flow_menu">
         <ul>
           <!-- Create -->
-          <li class="dctsdk active">
+          <li  id="create" class="dctsdk active">
             <div class="work-flow-menu-item open">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -49,7 +52,7 @@ active: tools-sdk
               </div>
             </div>
             <!-- Shared with code area -->
-            <div id="create" class="work-flow-menu-support work-flow-support-mode-mobile open">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile open">
               <h4>Create a PDF File</h4>
               <p class="work-flow-menu-support-copy">Create PDFs from a variety of formats, including static and dynamic HTML; Microsoft Word, PowerPoint, and Excel; as well as text, image, and, Zip</p>
               <a href="#" class="button-link">See Documentation</a>
@@ -57,7 +60,7 @@ active: tools-sdk
           </li>
 
           <!-- Export -->
-          <li class="dctsdk">
+          <li id="export" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -66,15 +69,15 @@ active: tools-sdk
               </div>
             </div>
             <!-- Shared with code area -->
-            <div id="export" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Export</h4>
               <p class="work-flow-menu-support-copy">Convert existing PDFs to popular formats, such as Microsoft Word, Excel, and PowerPoint, as well as text and image</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/servicesSDK/howtos.html#export-a-pdf" target="_blank" class="button-link">See Documentation</a>
             </div>
           </li>
 
           <!-- OCR / Recognize -->
-          <li class="dctsdk">
+          <li id="ocr" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -84,16 +87,18 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>OCR</h4>
               <p class="work-flow-menu-support-copy">
                 Use built-in optical character recognition (OCR) to convert images to text and enable document searching</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/servicesSDK/howtos.html#text-recognition-ocr" target="_blank" class="button-link">See Documentation</a>
+
+              <!-- /Code Viewer -->
             </div>
           </li>
 
           <!-- Protect -->
-          <li class="dctsdk">
+          <li id="protect" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -103,15 +108,16 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Protect</h4>
               <p class="work-flow-menu-support-copy">Set and enforce passwords for opening and viewing PDFs</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="#" class="button-link">See Documentation</a>
+             
             </div>
           </li>
 
           <!-- Combine *new* -->
-          <li class="dctsdk">
+          <li id="combine" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -121,15 +127,16 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Combine</h4>
               <p class="work-flow-menu-support-copy">Combine two or more documents into a single PDF</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/servicesSDK/howtos.html#combine-files" target="_blank" class="button-link">See Documentation</a>
+              
             </div>
           </li>
 
           <!-- Compress *new* -->
-          <li class="dctsdk">
+          <li id="compress" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -139,15 +146,16 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Compress</h4>
               <p class="work-flow-menu-support-copy">Reduce the size of PDFs while determining the quality of images and graphics </p>
               <a href="#" class="button-link">See sample code</a>
+             
             </div>
           </li>
 
           <!-- Reorder -->
-          <li class="dctsdk">
+          <li id="reorder" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -157,15 +165,16 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Reorder</h4>
               <p class="work-flow-menu-support-copy">Reorder the pages of an existing document</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="#" class="button-link">See Documentation</a>
+          
             </div>
           </li>
 
           <!-- Linearize -->
-          <li class="dctsdk">
+          <li id="linearize" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -175,15 +184,16 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Linearize</h4>
               <p class="work-flow-menu-support-copy">Optimize PDFs for quick viewing on the web, especially for mobile clients</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="#" class="button-link">See Documentation</a>
+           
             </div>
           </li>
 
           <!-- Insert -->
-          <li class="dctsdk">
+          <li id="insert" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -193,15 +203,17 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Insert</h4>
               <p class="work-flow-menu-support-copy">Insert one or more pages into an existing document</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="#" class="button-link">See Documentation</a>
+            
+             
             </div>
           </li>
 
           <!-- Replace -->
-          <li class="dctsdk">
+          <li id="replace" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -211,15 +223,16 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Replace</h4>
               <p class="work-flow-menu-support-copy">Replace one or more pages with another page</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="#" class="button-link">See Documentation</a>
+           
             </div>
           </li>
 
           <!-- Delete -->
-          <li class="dctsdk">
+          <li id="delete" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -229,15 +242,16 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Delete</h4>
               <p class="work-flow-menu-support-copy">Delete one or more pages from a document</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="#" class="button-link">See Documentation</a>
+           
             </div>
           </li>
 
           <!-- Rotate -->
-          <li class="dctsdk">
+          <li id="rotate" class="dctsdk">
             <div class="work-flow-menu-item">
               <div class="chev-arrow-right"></div>
               <div class="shadow-box dctsdk">
@@ -247,10 +261,11 @@ active: tools-sdk
             </div>
 
             <!-- Shared with code area -->
-            <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
+            <div class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Rotate</h4>
               <p class="work-flow-menu-support-copy">Rotate a page in an existing document</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="#" class="button-link">See Documentation</a>
+   
             </div>
           </li>
 
@@ -262,14 +277,16 @@ active: tools-sdk
             <div class="work-flow-menu-support">
               <h4>Create a PDF File</h4>
               <p class="work-flow-menu-support-copy">Create PDFs from a variety of formats, including static and dynamic HTML; Microsoft Word, PowerPoint, and Excel; as well as text, image, and, Zip</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/servicesSDK/howtos.html#create-a-pdf-from-static-html" class="button-link">See Documentation</a>
             </div>
+            <div class="code-viewer-wrapper">
+                <!-- Code Viewer -->
+                {% include code-sample.html %}
+                <!-- /Code Viewer -->
+            </div>
+                          
         </div>
-        <div class="sdk-embed-wrapper">
-          <img src="assets/wfl-placeholder.jpg" />
-        </div>
-
-
+ 
       </div>
 
     </div>

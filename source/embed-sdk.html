@@ -4,6 +4,32 @@ title: DC Platform Tools SDK
 active: embed-sdk
 ---
 
+<!-- Temp test of Coral Spectrum -->
+<style>
+  .sdk-embed-wrapper {
+    background: var( --spectrum-global-color-gray-300 ); /* --spectrum-alias-background-color-default */
+    border-radius: 4px;
+  }
+  .sdk-embed-wrapper coral-tablist {
+    border-color: transparent;
+  }
+  .tab-item-copy {
+    color: var( --spectrum-alias-title-text-color );
+    margin-left: auto !important;
+  }
+  ._coral-Tabs-itemLabel {
+    color: var( --spectrum-alias-title-text-color );
+  }
+  
+  ._coral-Tabs-selectionIndicator {
+    background-color: var( --spectrum-global-color-blue-700 ); /*  */
+  }
+  code[class*="language-"], 
+  pre[class*="language-"] {
+    white-space: pre-wrap;
+  }
+</style>
+
 <div class="main secondary-page">
 
   <div class="gradient">
@@ -55,7 +81,48 @@ active: embed-sdk
             <div class="work-flow-menu-support work-flow-support-mode-mobile open">
               <h4>Embed Modes</h4>
               <p class="work-flow-menu-support-copy">Control how you embed PDFs, with support for full-sized windows, sized containers, in-line display, and lightboxes</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos.html#embed-modes" class="button-link">See documentation</a>
+
+              <!-- Code Viewer -->
+              <p>
+                <div class="sdk-embed-wrapper tab-container-embed spectrum spectrum--darkest">
+                  <coral-tabview>
+                    <coral-tablist size="S">
+                      <coral-tab>HTML</coral-tab>
+                      <!-- This page doesn't actually have the tabs for languages. 
+                      <coral-tab class="is-selected">Node.js</coral-tab>
+                      <coral-tab>.Net</coral-tab>
+                      <coral-tab>Java</coral-tab>
+                      -->
+                      <div class="tab-item-copy">Copy</div>
+                    </coral-tablist>
+                    <coral-panelstack>
+                      <coral-panel>
+                        <!--  The code snippets MUST be to the left as all whitespace is preserved. 
+                              Indents in the code samples should be tabs, not spaces. -->
+                        {% prism html %}
+<div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+adobeDCView.previewFile({
+  content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+  metaData:{fileName: "Bodea Brochure.pdf"}
+},
+{
+  embedMode: "SIZED_CONTAINER"
+});
+});
+</script>
+                        {% endprism %}
+                            </coral-panel>
+                    </coral-panelstack>
+                  </coral-tabview>
+                </div>
+              </p>
+              <!-- /Code Viewer -->
+
             </div>
           </li>
 
@@ -74,7 +141,47 @@ active: embed-sdk
                 Full support for import, create, delete, update, exporting of comments, and more; programmatically add, update, and delete annotations with the option to save;
                 events can be triggered based on user actions
               </p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_comments.html#" class="button-link">See documentation</a>
+
+              <!-- Code Viewer -->
+              <p>
+                <div class="sdk-embed-wrapper tab-container-annotations spectrum spectrum--darkest">
+                  <coral-tabview>
+                    <coral-tablist size="S">
+                      <coral-tab>HTML</coral-tab>
+                      <!-- This page doesn't actually have the tabs for languages. 
+                      <coral-tab class="is-selected">Node.js</coral-tab>
+                      <coral-tab>.Net</coral-tab>
+                      <coral-tab>Java</coral-tab>
+                      -->
+                      <div class="tab-item-copy">Copy</div>
+                    </coral-tablist>
+                    <coral-panelstack>
+                      <coral-panel>
+                        <!--  The code snippets MUST be to the left as all whitespace is preserved. 
+                              Indents in the code samples should be tabs, not spaces. -->
+                        {% prism html %}
+<script type="text/javascript">
+document.addEventListener("adobe_dc_view_sdk.ready", function()
+{
+  var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+  adobeDCView.previewFile(
+{
+    content:   {location: {url: "(path to your PDF)/yourfilename.pdf"}},
+    metaData: {fileName: "yourfilename.pdf"}
+},
+{showAnnotationTools: true});
+});
+
+</script>
+                        {% endprism %}
+                      </coral-panel>
+                    </coral-panelstack>
+                  </coral-tabview>
+                </div>
+              </p>
+              <!-- /Code Viewer -->
+
             </div>
           </li>
 
@@ -90,7 +197,42 @@ active: embed-sdk
             <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>PDF Analytics</h4>
               <p class="work-flow-menu-support-copy">Easily integrate Adobe Analytics with only a few steps, or leverage the user events to push data to other analytics tools</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtodata.html#" class="button-link">See documentation</a>
+
+               <!-- Code Viewer -->
+               <p>
+                <div class="sdk-embed-wrapper tab-container-annotations spectrum spectrum--darkest">
+                  <coral-tabview>
+                    <coral-tablist size="S">
+                      <coral-tab>HTML</coral-tab>
+                      <div class="tab-item-copy">Copy</div>
+                    </coral-tablist>
+                    <coral-panelstack>
+                      <coral-panel>
+                        <!--  The code snippets MUST be to the left as all whitespace is preserved. 
+                              Indents in the code samples should be tabs, not spaces. -->
+                        {% prism html %}
+<script type="text/javascript">
+  adobeDCView.registerCallback(
+/* Type of call back */
+AdobeDC.View.Enum.CallbackType.EVENT_LISTENER,
+/* call back function */
+function(event) {
+console.log(event);
+},
+{
+enablePDFAnalytics: true,
+}
+);
+
+</script>
+                        {% endprism %}
+                      </coral-panel>
+                    </coral-panelstack>
+                  </coral-tabview>
+                </div>
+              </p>
+              <!-- /Code Viewer -->
             </div>
           </li>
 
@@ -106,7 +248,55 @@ active: embed-sdk
             <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Collaborative Settings</h4>
               <p class="work-flow-menu-support-copy">For multi-user document collaboration, identify reviewers by name or email address and save annotation settings through custom callbacks (default settings display GUEST as the reviewer name for all comments)</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#user-profiles" class="button-link">See documentation</a>
+
+               <!-- Code Viewer -->
+               <p>
+                <div class="sdk-embed-wrapper tab-container-annotations spectrum spectrum--darkest">
+                  <coral-tabview>
+                    <coral-tablist size="S">
+                      <coral-tab>HTML</coral-tab>
+                      <!-- This page doesn't actually have the tabs for languages. 
+                      <coral-tab class="is-selected">Node.js</coral-tab>
+                      <coral-tab>.Net</coral-tab>
+                      <coral-tab>Java</coral-tab>
+                      -->
+                      <div class="tab-item-copy">Copy</div>
+                    </coral-tablist>
+                    <coral-panelstack>
+                      <coral-panel>
+                        <!--  The code snippets MUST be to the left as all whitespace is preserved. 
+                              Indents in the code samples should be tabs, not spaces. -->
+                        {% prism html %}
+<script type="text/javascript">
+    const profile = {
+      userProfile: {
+          name: '<name of user>',
+          firstName: '<first name>',
+          lastName: '<last name>',
+          email: '<user email>'
+      }
+    };
+
+  adobeDCView.registerCallback(
+    AdobeDC.View.Enum.CallbackType.GET_USER_PROFILE_API,
+    function() {
+      return new Promise((resolve, reject) => {
+          resolve({
+            code: AdobeDC.View.Enum.ApiResponseCode.SUCCESS,
+            data: profile
+          });
+      }); 
+    }
+  );
+</script>
+                        {% endprism %}
+                      </coral-panel>
+                    </coral-panelstack>
+                  </coral-tabview>
+                </div>
+              </p>
+              <!-- /Code Viewer -->
             </div>
           </li>
 
@@ -122,7 +312,48 @@ active: embed-sdk
             <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Save Controls</h4>
               <p class="work-flow-menu-support-copy">Support auto-save to local drives or external storage, with options for frequency and polling, along with success/fail events capture; use file modification and status polling events for multi-user workflows</p>
-              <a href="#" class="button-link">See sample code</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#save-a-pdf" class="button-link">See documentation</a>
+
+               <!-- Code Viewer -->
+               <p>
+                <div class="sdk-embed-wrapper tab-container-annotations spectrum spectrum--darkest">
+                  <coral-tabview>
+                    <coral-tablist size="S">
+                      <coral-tab>HTML</coral-tab>
+                      <!-- This page doesn't actually have the tabs for languages. 
+                      <coral-tab class="is-selected">Node.js</coral-tab>
+                      <coral-tab>.Net</coral-tab>
+                      <coral-tab>Java</coral-tab>
+                      -->
+                      <div class="tab-item-copy">Copy</div>
+                    </coral-tablist>
+                    <coral-panelstack>
+                      <coral-panel>
+                        <!--  The code snippets MUST be to the left as all whitespace is preserved. 
+                              Indents in the code samples should be tabs, not spaces. -->
+                        {% prism html %}
+<script type="text/javascript">
+  const saveOptions = {
+        autoSaveFrequency: <Number, default=0>,
+        enableFocusPolling: <Boolean, default=false>,
+        showSaveButton: <Boolean, default=true>
+}
+
+adobeDCView.registerCallback(
+        AdobeDC.View.Enum.CallbackType.SAVE_API,
+        function(metadata, content, options) {...},
+        saveOptions
+
+);
+
+</script>
+                        {% endprism %}
+                      </coral-panel>
+                    </coral-panelstack>
+                  </coral-tabview>
+                </div>
+              </p>
+              <!-- /Code Viewer -->
             </div>
           </li>
 
@@ -139,23 +370,95 @@ active: embed-sdk
             <div id="OCR" class="work-flow-menu-support work-flow-support-mode-mobile">
               <h4>Menu &amp; Tool Options</h4>
               <p class="work-flow-menu-support-copy">Programmatically enable or disable the left-hand panel, comments pane, toolbars, print, and download options</p>
-             <a href="#" class="button-link">See Documentation</a>
+              <a href="https://www.adobe.com/devnet-docs/dcsdk_io/viewSDK/howtos_ui.html#menu-and-tool-options" class="button-link">See Documentation</a>
+
+               <!-- Code Viewer -->
+               <p>
+                <div class="sdk-embed-wrapper tab-container-annotations spectrum spectrum--darkest">
+                  <coral-tabview>
+                    <coral-tablist size="S">
+                      <coral-tab>HTML</coral-tab>
+                      <!-- This page doesn't actually have the tabs for languages. 
+                      <coral-tab class="is-selected">Node.js</coral-tab>
+                      <coral-tab>.Net</coral-tab>
+                      <coral-tab>Java</coral-tab>
+                      -->
+                      <div class="tab-item-copy">Copy</div>
+                    </coral-tablist>
+                    <coral-panelstack>
+                      <coral-panel>
+                        <!--  The code snippets MUST be to the left as all whitespace is preserved. 
+                              Indents in the code samples should be tabs, not spaces. -->
+                        {% prism html %}
+<script type="text/javascript">
+<div id="adobe-dc-view"></div>
+<script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+<script type="text/javascript">
+document.addEventListener("adobe_dc_view_sdk.ready", function () {
+  var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+  adobeDCView.previewFile({
+    content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+    metaData:{fileName: "Bodea Brochure.pdf"}
+  }, {"showLeftHandPanel":true,"showPageControls":false});
+});
+</script>
+
+
+</script>
+                        {% endprism %}
+                      </coral-panel>
+                    </coral-panelstack>
+                  </coral-tabview>
+                </div>
+              </p>
+              <!-- /Code Viewer -->
             </div>
           </li>
         </ul>
       </div>
       <!-- This is not in the v3 reference document -->
         <div class="work-flow_code">
-          <div id="sdk-support" class="menu-item-info-content">
+         <div id="sdk-support" class="menu-item-info-content">
             <div class="work-flow-menu-support">
               <h4>Embed Modes</h4>
               <p class="work-flow-menu-support-copy">Embed Modes, including static and dynamic HTML; Microsoft Word, PowerPoint, and Excel; as well as text, image, and, Zip</p>
               <a href="#" class="button-link">See Documentation</a>
-            </div>
-          </div>
-          <div class="sdk-embed-wrapper">
-            <img src="assets/wfl-placeholder.jpg" />
-          </div>
+
+              <p>
+                <div class="sdk-embed-wrapper spectrum spectrum--darkest">
+                  <coral-tabview>
+                    <coral-tablist size="S">
+                      <coral-tab>HTML</coral-tab>
+                      <div class="tab-item-copy">Copy</div>
+                    </coral-tablist>
+                    <coral-panelstack>
+                      <coral-panel> 
+                      <!--  The code snippets MUST be to the left as all whitespace is preserved. 
+                            Indents in the code samples should be tabs, not spaces. -->
+                       {% prism html %}
+                      <div id="adobe-dc-view" style="height: 360px; width: 500px;"></div>
+                      <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+                      <script type="text/javascript">
+                        document.addEventListener("adobe_dc_view_sdk.ready", function(){ 
+                          var adobeDCView = new AdobeDC.View({clientId: "<YOUR_CLIENT_ID>", divId: "adobe-dc-view"});
+                          adobeDCView.previewFile({
+                            content:{location: {url: "https://documentcloud.adobe.com/view-sdk-demo/PDFs/Bodea Brochure.pdf"}},
+                            metaData:{fileName: "Bodea Brochure.pdf"}
+                          },
+                          {
+                            embedMode: "SIZED_CONTAINER"
+                          });
+                        });
+                      </script>
+                      {% endprism %}                  
+                      </coral-panel>
+                    </coral-panelstack>
+                  </coral-tabview>
+              </p>
+            </div> 
+          </div> 
+          
+
         </div>
     </div>
   </section>
