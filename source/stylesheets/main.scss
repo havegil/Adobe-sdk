@@ -430,22 +430,18 @@ section.home-card {
           }
 
 
-          &.step2{
+          &.step2 {
             @media screen and (min-width: 1440px) {
-              width:4.75rem;
-              padding-left: 0;
-              padding-right: 0;
-              margin-left:10px
+              width: 2.75rem;
             }
           }
 
 
           @media screen and (min-width: 1440px) {
-            margin: 0.1rem;
+            margin: 0 0 0 0.75rem;
 
             &:first-of-type {
-              margin: 0 0.1rem 0 0;
-              min-width: 72px;
+              margin: 0;
             }
           }
         }
