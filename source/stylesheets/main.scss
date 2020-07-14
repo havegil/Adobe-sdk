@@ -340,13 +340,17 @@ body {
       counter-increment: get-started-counter;
       margin-bottom: 2rem;
       position: relative;
-      padding-left: 2em;
+      //padding-left: 2em;
       @media screen and (min-width: 1440px) {
         display: inline-block;
         margin: 0;
         width: 33%;
         padding: 0 1rem;
         vertical-align: top;
+      }
+
+      @media screen and (min-width: 768px) {
+        text-align: center;
       }
     }
 
@@ -802,9 +806,6 @@ section.dctsdk-work-flow {
   }
 
   .work-flow_menu ul li .work-flow-menu-copy {
-    // #GN-c margin-top: -2rem;
-    // #GN-c margin-left: 2.25rem;
-    //#GN
     margin-top: -2.51rem;
     margin-left: 2.875rem;
   }
@@ -812,8 +813,9 @@ section.dctsdk-work-flow {
   .work-flow_menu ul li .shadow-box.dctsdk {
     margin: -1.375rem 0 0;
     @media screen and (min-width: 768px) {
-      //#GN-c padding: 1.25rem 2rem;
-      padding: 0.8125rem 1rem;
+
+      //#GN padding: 0.8125rem 1rem;
+      padding: 1.0625rem 1rem;
     }
   }
 
@@ -822,8 +824,9 @@ section.dctsdk-work-flow {
       background: $white;
       box-shadow: 0 3px 16px #46303029;
       border-radius: 6px;
-      //#GN-c padding: 1.25rem 2rem;
-      padding: 0.8125rem 1rem;
+     //#GN padding: 0.8125rem 1rem;
+     padding: 1.0625rem 1rem;
+
     }
   }
 
