@@ -411,7 +411,7 @@ body {
             margin: 0 0.35rem 0 0;
           }
 
-          
+
           &.step2{
             @media screen and (min-width: 1440px) {
               width:4.75rem;
@@ -689,7 +689,13 @@ section.home-card {
     box-shadow: 0 3px 26px #00000010;
     border-radius: 10px;
     margin: 0 0 1.5rem;
-    min-height: 21rem;
+    min-height: 22rem;
+    @media screen and (min-width: 768px) {
+      min-height: 24rem;
+    }
+    @media screen and (min-width: 1440px) {
+      min-height: 21rem;
+    }
     padding: 2.25rem 2rem 1.875rem;
     position: relative;
     /*width: 17.75rem !important;*/
@@ -1125,7 +1131,7 @@ section.dctsdk-work-flow {
 
   .work-flow-support-mode-mobile.open {
     margin-top: 2.125rem;
-    
+
     @media screen and (min-width: 1440px) {
       //padding-left: 2rem;
       display: block;
@@ -1240,7 +1246,7 @@ section.customer {
     img {
       width: 100%;
     }
-    
+
 
   }
 }
