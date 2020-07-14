@@ -1385,18 +1385,24 @@ const executionContext =
 PDFToolsSdk.ExecutionContext
 .create( credentials );             
 
-// Build ProtectPDF options by setting a User 
+// Build ProtectPDF options by 
+//setting a User 
 //Password and Encryption
 // Algorithm (used for encrypting the PDF file).
 const protectPDF = 
 PDFToolsSdk.ProtectPDF,
 options = 
 new protectPDF
-  .options.PasswordProtectOptions.Builder()
-  .setUserPassword( "encryptPassword" )
-  .setEncryptionAlgorithm(PDFToolsSdk
-  .ProtectPDF
-  .options.EncryptionAlgorithm.AES_256 )
+  .options
+  .PasswordProtectOptions
+  .Builder()
+  .setUserPassword( 
+    "encryptPassword"
+     )
+  .setEncryptionAlgorithm(
+    PDFToolsSdk.ProtectPDF
+  .options
+  .EncryptionAlgorithm.AES_256 )
   .build();
 
 // Create a new operation instance.
@@ -1426,8 +1432,10 @@ protectPDFOperation
                  {% prism clike %}
 // Create an ExecutionContext 
 //using credentials.
-ExecutionContext executionContext = 
-ExecutionContext.Create(credentials); 
+ExecutionContext 
+executionContext = 
+ExecutionContext
+.Create(credentials); 
 
 // Build ProtectPDF options by setting a 
 //User Password and Encryption
@@ -1436,7 +1444,9 @@ ExecutionContext.Create(credentials);
 ProtectPDFOptions protectPDFOptions = 
    ProtectPDFOptions
   .PasswordProtectOptionsBuilder()
-  .SetUserPassword("encryptPassword")                       
+  .SetUserPassword(
+    "encryptPassword"
+    )                       
   .SetEncryptionAlgorithm(
     EncryptionAlgorithm.AES_256)
   .Build();

@@ -494,9 +494,16 @@ body {
     }
 
     h4 {
-      font-size: 0.9375rem;
+      //font-size: 0.9375rem;
+      font-size:1.0625rem;
+      line-height:24px;
       text-align: left;
       padding-bottom: 0.75rem;
+
+      @media screen and (min-width: 768px) {
+        font-size: 1rem;
+        line-height:25.5px;
+      }
     }
 
     h5 {
