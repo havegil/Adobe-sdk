@@ -162,8 +162,17 @@ body {
     background-color: $white;
   }
 
+section.home-card {
+  max-width: 20.5rem !important;
   .card.blanche {
     padding-bottom: 4.875rem !important;
+    @media screen and (min-width: 768px) {
+      margin: 0 0.75rem !important;
+    }
+    @media screen and (min-width: 1440px) {
+      margin: 0 1.25rem !important;
+      width: 25rem !important;
+    }
 
     h2 {
       font-size: 1.1875rem;
@@ -178,6 +187,16 @@ body {
       }
     }
   }
+  @media screen and (min-width: 768px) {
+    max-width: 38.5rem !important;
+  }
+  @media screen and (min-width: 1440px) {
+    max-width: 55.5rem !important;
+    .callout-item {
+      width: 21rem !important;
+    }
+  }
+}
 }
 /* home specific styles end */
 /* secondary-page specific styles */
@@ -688,7 +707,7 @@ section.slab {
 /* slab container top end */
 /* home cards */
 section.home-card {
-  margin: -11rem 2.75rem 4.375rem;
+  margin: -11rem auto 4.375rem auto;
 
   .card.blanche {
     background: $white 0% 0% no-repeat padding-box;
