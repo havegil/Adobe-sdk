@@ -367,6 +367,9 @@ body {
       text-align: center;
       position: absolute;
       left: 0;
+      max-width: 46px;
+      max-height: 46px;
+
       @media screen and (min-width: 1440px) {
         transform: scale(1.58625);
         left: calc(50% - 17px);
@@ -375,7 +378,7 @@ body {
     }
 
     div {
-      display: inline-block;
+      //#GN display: inline-block;
       padding-left: 0.75rem;
       @media screen and (min-width: 1440px) {
         padding-left: 0;
@@ -700,12 +703,17 @@ section.home-card {
 
       margin: 0 1.25rem 1.5rem;
     }
+
     @media screen and (min-width: 1440px) {
       min-height: 23.5rem;
       width: 18.125rem !important;
+
+      margin: 0 1.25rem 1.5rem;
     }
+
     padding: 2.25rem 2rem 1.875rem;
     position: relative;
+
     h2 {
       text-align: center;
     }
@@ -1075,9 +1083,22 @@ section.dctsdk-work-flow {
   .work-flow_code {
     display: none;
     padding-left: 0.0625rem;
+
     @media screen and (min-width: 768px) {
-      display: none;
+      //#GN display: none;
+      display: block;
+
+      .code-viewer-wrapper {
+        .sdk-embed-wrapper {
+          display: none;
+
+          &.code-window-opened {
+            display: block;
+          }
+        }
+      }
     }
+
     @media screen and (min-width: 1440px) {
       display: block;
       padding-left: 0.0625rem;
@@ -1130,9 +1151,12 @@ section.dctsdk-work-flow {
   .work-flow-support-mode-mobile.open {
     margin-top: 2.125rem;
 
+    display: block;
+
     @media screen and (min-width: 1440px) {
       //padding-left: 2rem;
-      display: block;
+      //#GN display: block;
+      display:none;
     }
 
     .button-link {
@@ -1202,7 +1226,8 @@ section.grey-bar {
   p {
     padding: 0 2rem;
     @media screen and (min-width: 1440px) {
-      padding: 0 2rem 0 0;
+     //#GN  padding: 0 2rem 0 0;
+     padding: 0 1rem 0 0;
     }
   }
   @media screen and (min-width: 1440px) {
