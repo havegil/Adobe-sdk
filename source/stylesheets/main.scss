@@ -162,41 +162,43 @@ body {
     background-color: $white;
   }
 
-section.home-card {
-  max-width: 20.5rem !important;
-  .card.blanche {
-    padding-bottom: 4.875rem !important;
-    @media screen and (min-width: 768px) {
-      margin: 0 0.75rem !important;
-    }
-    @media screen and (min-width: 1440px) {
-      margin: 0 1.25rem !important;
-      width: 25rem !important;
-    }
+  section.home-card {
+    max-width: 20.5rem !important;
 
-    h2 {
-      font-size: 1.1875rem;
-      line-height: 1.5625rem;
+    .card.blanche {
+      padding-bottom: 4.875rem !important;
       @media screen and (min-width: 768px) {
-        font-size: 1.0625rem;
-        line-height: 1.375rem;
+        margin: 0 0.75rem !important;
       }
       @media screen and (min-width: 1440px) {
-        font-size: 1.125rem;
-        line-height: 1.4375rem;
+        margin: 0 1.25rem !important;
+        width: 25rem !important;
+      }
+
+      h2 {
+        font-size: 1.1875rem;
+        line-height: 1.5625rem;
+        @media screen and (min-width: 768px) {
+          font-size: 1.0625rem;
+          line-height: 1.375rem;
+        }
+        @media screen and (min-width: 1440px) {
+          font-size: 1.125rem;
+          line-height: 1.4375rem;
+        }
+      }
+    }
+    @media screen and (min-width: 768px) {
+      max-width: 38.5rem !important;
+    }
+    @media screen and (min-width: 1440px) {
+      max-width: 55.5rem !important;
+
+      .callout-item {
+        width: 21rem !important;
       }
     }
   }
-  @media screen and (min-width: 768px) {
-    max-width: 38.5rem !important;
-  }
-  @media screen and (min-width: 1440px) {
-    max-width: 55.5rem !important;
-    .callout-item {
-      width: 21rem !important;
-    }
-  }
-}
 }
 /* home specific styles end */
 /* secondary-page specific styles */
@@ -383,7 +385,6 @@ section.home-card {
       left: 0;
       max-width: 46px;
       max-height: 46px;
-
       @media screen and (min-width: 1440px) {
         transform: scale(1.58625);
         left: calc(50% - 17px);
@@ -429,14 +430,11 @@ section.home-card {
             margin: 0 0.35rem 0 0;
           }
 
-
           &.step2 {
             @media screen and (min-width: 1440px) {
               width: 2.75rem;
             }
           }
-
-
           @media screen and (min-width: 1440px) {
             margin: 0 0 0 0.75rem;
 
@@ -510,14 +508,13 @@ section.home-card {
 
     h4 {
       //font-size: 0.9375rem;
-      font-size:1.0625rem;
-      line-height:24px;
+      font-size: 1.0625rem;
+      line-height: 24px;
       text-align: left;
       padding-bottom: 0.75rem;
-
       @media screen and (min-width: 768px) {
         font-size: 1rem;
-        line-height:25.5px;
+        line-height: 25.5px;
       }
     }
 
@@ -703,7 +700,7 @@ section.slab {
 /* slab container top end */
 /* home cards */
 section.home-card {
-  margin: -11rem auto 4.375rem auto;
+  margin: -11rem auto 4.375rem;
 
   .card.blanche {
     background: $white 0% 0% no-repeat padding-box;
@@ -718,14 +715,11 @@ section.home-card {
       min-height: 24rem;
       width: 21.875rem !important;
     }
-
     @media screen and (min-width: 1440px) {
       min-height: 23.5rem;
       width: 18.125rem !important;
-
       margin: 0 1.25rem 1.5rem;
     }
-
     padding: 2.25rem 2rem 1.875rem;
     position: relative;
 
@@ -759,10 +753,14 @@ section.home-card {
 
         a {
           display: inline-block;
-          margin: 0 0.35rem;
+          margin: 0 0.75rem;
 
           &:first-of-type {
-            margin: 0 0.35rem 0 0;
+            margin: 0 0.75rem 0 0;
+          }
+
+          &:last-of-type {
+            margin: 0 0 0 0.75rem;
           }
         }
       }
@@ -839,7 +837,6 @@ section.dctsdk-work-flow {
   .work-flow_menu ul li .shadow-box.dctsdk {
     margin: -1.375rem 0 0;
     @media screen and (min-width: 768px) {
-
       //#GN padding: 0.8125rem 1rem;
       padding: 1.0625rem 1rem;
     }
@@ -850,9 +847,8 @@ section.dctsdk-work-flow {
       background: $white;
       box-shadow: 0 3px 16px #46303029;
       border-radius: 6px;
-     //#GN padding: 0.8125rem 1rem;
-     padding: 1.0625rem 1rem;
-
+      //#GN padding: 0.8125rem 1rem;
+      padding: 1.0625rem 1rem;
     }
   }
 
@@ -1098,7 +1094,6 @@ section.dctsdk-work-flow {
   .work-flow_code {
     display: none;
     padding-left: 0.0625rem;
-
     @media screen and (min-width: 768px) {
       //#GN display: none;
       display: block;
@@ -1113,7 +1108,6 @@ section.dctsdk-work-flow {
         }
       }
     }
-
     @media screen and (min-width: 1440px) {
       display: block;
       padding-left: 0.0625rem;
@@ -1130,7 +1124,6 @@ section.dctsdk-work-flow {
     }
     @media screen and (min-width: 1440px) {
       //padding-left: 2rem;
-
     }
 
     .menu-item-info-content {
@@ -1165,13 +1158,11 @@ section.dctsdk-work-flow {
 
   .work-flow-support-mode-mobile.open {
     margin-top: 2.125rem;
-
     display: block;
-
     @media screen and (min-width: 1440px) {
       //padding-left: 2rem;
       //#GN display: block;
-      display:none;
+      display: none;
     }
 
     .button-link {
@@ -1237,12 +1228,30 @@ section.grey-bar {
   margin: 4.375rem 0;
   padding: 1.125rem 0.75rem 1.5625rem;
   border-radius: 10px;
+  @media screen and (max-width: 767px) {
+    .slick-track {
+      width: calc(17.75rem * 5) !important;
+    }
+
+    .slick-list {
+      padding: 0 !important;
+    }
+
+    .card-slider-container-home {
+      margin: 0 auto;
+      max-width: 17.75rem;
+    }
+
+    .card {
+      width: 17.75rem !important;
+    }
+  }
 
   p {
     padding: 0 2rem;
     @media screen and (min-width: 1440px) {
-     //#GN  padding: 0 2rem 0 0;
-     padding: 0 1rem 0 0;
+      //#GN  padding: 0 2rem 0 0;
+      padding: 0 1rem 0 0;
     }
   }
   @media screen and (min-width: 1440px) {
@@ -1259,7 +1268,10 @@ section.grey-bar {
   }
 
   .slick-dots {
-    bottom: -90px !important;
+    bottom: -60px !important;
+    @media screen and (min-width: 768px) {
+      bottom: -90px !important;
+    }
   }
 }
 /* grey bar end */
@@ -1284,8 +1296,6 @@ section.customer {
     img {
       width: 100%;
     }
-
-
   }
 }
 /* customer logos end */
