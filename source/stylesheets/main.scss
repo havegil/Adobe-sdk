@@ -513,9 +513,15 @@ body {
       text-align: left;
       padding-bottom: 0.75rem;
       @media screen and (min-width: 768px) {
-        font-size: 1rem;
+        //@GN font-size: 1rem; 
+        font-size: 1.0625rem;
         line-height: 25.5px;
       }
+
+      @media screen and (min-width: 768px) {
+         font-size: 1rem;        
+      }
+
     }
 
     h5 {
