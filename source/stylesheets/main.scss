@@ -1230,7 +1230,8 @@ section.grey-bar {
   border-radius: 10px;
   @media screen and (max-width: 767px) {
     .slick-track {
-      width: calc(17.75rem * 5) !important;
+      width: calc(17.75rem * 10) !important;
+      height: 32vh; 
     }
 
     .slick-list {
@@ -1251,7 +1252,7 @@ section.grey-bar {
     padding: 0 2rem;
     @media screen and (min-width: 1440px) {
       //#GN  padding: 0 2rem 0 0;
-      padding: 0 1rem 0 0;
+      padding: 0 2rem 0 0;
     }
   }
   @media screen and (min-width: 1440px) {
