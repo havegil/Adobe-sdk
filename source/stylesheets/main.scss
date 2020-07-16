@@ -246,7 +246,7 @@ body {
       height: 100px;
       margin: 0 auto;
 
-      
+
       .embed-icon-1{
         width:73.5px;
         height:80.38px;
@@ -258,7 +258,7 @@ body {
         width: 86.7px;
         height:68.3px;
         margin:0px;
-       
+
         vertical-align:middle;
       }
 
@@ -543,7 +543,7 @@ body {
       }
 
       @media screen and (min-width: 768px) {
-         font-size: 1rem;        
+         font-size: 1rem;
       }
 
     }
@@ -1227,10 +1227,6 @@ section.grey-bar {
   padding: 1.125rem 0.75rem 1.5625rem;
   border-radius: 10px;
   @media screen and (max-width: 767px) {
-    .slick-track {
-      width: calc(17.75rem * 5) !important;
-    }
-
     .slick-list {
       padding: 0 !important;
     }
@@ -1248,7 +1244,7 @@ section.grey-bar {
   p {
     padding: 0 2rem;
     @media screen and (min-width: 1440px) {
-      padding: 0 1rem 0 0;
+      padding: 0 2rem 0 0;
     }
   }
   @media screen and (min-width: 1440px) {
